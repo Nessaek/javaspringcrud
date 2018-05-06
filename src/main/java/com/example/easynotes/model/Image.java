@@ -23,10 +23,10 @@ public class Image{
     private Long id;
 
     @NotBlank
-    private String title;
+    private String fileName;
 
     @NotBlank
-    private String content;
+    private String fileLocation;
 
     @Column(nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
@@ -38,6 +38,14 @@ public class Image{
     @LastModifiedDate
     private Date updatedAt;
 
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
     public Long getId() {
         return id;
     }
@@ -46,20 +54,12 @@ public class Image{
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getFileLocation() {
+        return fileLocation;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
+    public void setFileLocation(String fileLocation) {
+        this.fileLocation = fileLocation;
     }
 
     public Date getCreatedAt() {
