@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="easy-notes" />
+        <module name="face" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="easy-notes" target="1.8" />
+      <module name="face" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

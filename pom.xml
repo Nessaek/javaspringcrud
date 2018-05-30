@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>easy-notes</artifactId>
+	<artifactId>faces</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
@@ -24,6 +24,7 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -32,19 +33,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk</artifactId>
-			<version>1.11.313</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-ec2 -->
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk-ec2</artifactId>
-			<version>1.11.313</version>
 		</dependency>
 
 		<dependency>
@@ -62,6 +50,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-video-intelligence</artifactId>
+			<version>0.47.0-beta</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -72,6 +65,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
